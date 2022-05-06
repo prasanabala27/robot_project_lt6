@@ -9,7 +9,7 @@ TC1
    Set Selenium Implicit Wait    30s
    Go To    url=https://www.db4free.net/
    Click Element    link=phpMyAdmin »
-   Switch Window     phpMyAdmin
+   Switch Window     new
    Input Text    id=input_username    admin
    Input Password    id=input_password    admin123
    Click Element    id=input_go
