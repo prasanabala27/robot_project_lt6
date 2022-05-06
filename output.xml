@@ -1,92 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220506 09:40:04.425" rpa="false" schemaversion="3">
-<suite id="s1" name="Demo4 Suite" source="C:\Users\ACER\Desktop\LT6\robot_project\selenium_suite\demo4_suite.robot">
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220506 14:13:19.497" rpa="false" schemaversion="3">
+<suite id="s1" name="Demo6 Suite" source="C:\Users\ACER\Desktop\LT6\robot_project\selenium_suite\demo6_suite.robot">
 <test id="s1-t1" name="TC1" line="5">
 <kw name="Append To Environment Variable" library="OperatingSystem">
 <arg>path</arg>
 <arg>C:\\Users\\ACER\\Desktop\\LT6\\driver</arg>
 <doc>Appends given ``values`` to environment variable ``name``.</doc>
-<msg timestamp="20220506 09:40:04.850" level="INFO">Environment variable 'path' set to value 'C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\MinGW\mingw32\bin;C:\Users\ACER\AppData\Local\Programs\Microsoft VS Code\MinGW\bin;C:\Program Files\Git\cmd;C:\Users\ACER\AppData\Local\Programs\Microsoft VS Code\mingw64\bin;C:\MinGW\bin;C:\Users\ACER\AppData\Local\Programs\Microsoft VS Code\mingw64\x86_64-w64-mingw32\bin;C:\msys64\mingw64\x86_64-w64-mingw32\bin;C:\MinGW\mingw32\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files (x86)\GnuWin32\bin;D:\New folder\GnuWin32\bin;C:\Program Files\Python310\Scripts;C:\python\Scripts\;C:\python\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\Java\jdk-17\bin;C:\Users\ACER\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ACER\AppData\Local\Microsoft\WindowsApps;C:\Users\kavit\AppData\Local\Programs\Python\Python310\Scripts;C:\Program Files\Cppcheck;;C:\Program Files\JetBrains\PyCharm Community Edition 2022.1\bin;;C:\Users\ACER\Desktop\LT6\driver'.</msg>
-<status status="PASS" starttime="20220506 09:40:04.849" endtime="20220506 09:40:04.850"/>
+<msg timestamp="20220506 14:13:19.689" level="INFO">Environment variable 'path' set to value 'C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\MinGW\mingw32\bin;C:\Users\ACER\AppData\Local\Programs\Microsoft VS Code\MinGW\bin;C:\Program Files\Git\cmd;C:\Users\ACER\AppData\Local\Programs\Microsoft VS Code\mingw64\bin;C:\MinGW\bin;C:\Users\ACER\AppData\Local\Programs\Microsoft VS Code\mingw64\x86_64-w64-mingw32\bin;C:\msys64\mingw64\x86_64-w64-mingw32\bin;C:\MinGW\mingw32\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files (x86)\GnuWin32\bin;D:\New folder\GnuWin32\bin;C:\Program Files\Python310\Scripts;C:\python\Scripts\;C:\python\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\Java\jdk-17\bin;C:\Users\ACER\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ACER\AppData\Local\Microsoft\WindowsApps;C:\Users\kavit\AppData\Local\Programs\Python\Python310\Scripts;C:\Program Files\Cppcheck;;C:\Program Files\JetBrains\PyCharm Community Edition 2022.1\bin;;C:\Users\ACER\Desktop\LT6\driver'.</msg>
+<status status="PASS" starttime="20220506 14:13:19.689" endtime="20220506 14:13:19.689"/>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>url=https://www.salesforce.com/in/form/signup/freetrial-sales/</arg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220506 09:40:04.851" level="INFO">Opening browser 'chrome' to base url 'https://www.salesforce.com/in/form/signup/freetrial-sales/'.</msg>
-<status status="PASS" starttime="20220506 09:40:04.851" endtime="20220506 09:40:14.027"/>
+<msg timestamp="20220506 14:13:19.690" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20220506 14:13:19.690" endtime="20220506 14:13:20.852"/>
 </kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>name=UserFirstName</arg>
-<arg>john</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220506 09:40:14.030" level="INFO">Typing text 'john' into text field 'name=UserFirstName'.</msg>
-<status status="PASS" starttime="20220506 09:40:14.028" endtime="20220506 09:40:14.228"/>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220506 14:13:20.852" endtime="20220506 14:13:20.979"/>
 </kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>name=UserLastName</arg>
-<arg>wick</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220506 09:40:14.230" level="INFO">Typing text 'wick' into text field 'name=UserLastName'.</msg>
-<status status="PASS" starttime="20220506 09:40:14.229" endtime="20220506 09:40:14.386"/>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>30s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220506 14:13:20.979" endtime="20220506 14:13:20.981"/>
 </kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>name=UserEmail</arg>
-<arg>john@gmail.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220506 09:40:14.388" level="INFO">Typing text 'john@gmail.com' into text field 'name=UserEmail'.</msg>
-<status status="PASS" starttime="20220506 09:40:14.387" endtime="20220506 09:40:14.633"/>
-</kw>
-<kw name="Select From List By Label" library="SeleniumLibrary">
-<arg>name=UserTitle</arg>
-<arg>IT Manager</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20220506 09:40:14.635" level="INFO">Selecting options from selection list 'name=UserTitle' by label IT Manager.</msg>
-<status status="PASS" starttime="20220506 09:40:14.634" endtime="20220506 09:40:14.767"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>name=CompanyName</arg>
-<arg>com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220506 09:40:14.769" level="INFO">Typing text 'com' into text field 'name=CompanyName'.</msg>
-<status status="PASS" starttime="20220506 09:40:14.768" endtime="20220506 09:40:14.937"/>
-</kw>
-<kw name="Select From List By Label" library="SeleniumLibrary">
-<arg>name=CompanyEmployees</arg>
-<arg>101 - 500 employees</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20220506 09:40:14.939" level="INFO">Selecting options from selection list 'name=CompanyEmployees' by label 101 - 500 employees.</msg>
-<status status="PASS" starttime="20220506 09:40:14.938" endtime="20220506 09:40:15.069"/>
-</kw>
-<kw name="Select From List By Label" library="SeleniumLibrary">
-<arg>name=CompanyCountry</arg>
-<arg>United Kingdom</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20220506 09:40:15.071" level="INFO">Selecting options from selection list 'name=CompanyCountry' by label United Kingdom.</msg>
-<status status="PASS" starttime="20220506 09:40:15.070" endtime="20220506 09:40:15.203"/>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=https://www.db4free.net/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220506 14:13:20.981" level="INFO">Opening url 'https://www.db4free.net/'</msg>
+<status status="PASS" starttime="20220506 14:13:20.981" endtime="20220506 14:13:23.259"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath=//div[@class='checkbox-ui']</arg>
+<arg>link=phpMyAdmin »</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220506 09:40:15.205" level="INFO">Clicking element 'xpath=//div[@class='checkbox-ui']'.</msg>
-<status status="PASS" starttime="20220506 09:40:15.204" endtime="20220506 09:40:15.295"/>
+<msg timestamp="20220506 14:13:23.260" level="INFO">Clicking element 'link=phpMyAdmin »'.</msg>
+<status status="PASS" starttime="20220506 14:13:23.259" endtime="20220506 14:13:23.330"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>phpMyAdmin</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20220506 14:13:23.330" endtime="20220506 14:13:30.213"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=input_username</arg>
+<arg>admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220506 14:13:30.214" level="INFO">Typing text 'admin' into text field 'id=input_username'.</msg>
+<status status="PASS" starttime="20220506 14:13:30.213" endtime="20220506 14:13:30.291"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id=input_password</arg>
+<arg>admin123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220506 14:13:30.291" level="INFO">Typing password into text field 'id=input_password'.</msg>
+<msg timestamp="20220506 14:13:30.327" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220506 14:13:30.373" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220506 14:13:30.291" endtime="20220506 14:13:30.373"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>name=start my free trial</arg>
+<arg>id=input_go</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220506 09:40:15.297" level="INFO">Clicking element 'name=start my free trial'.</msg>
-<status status="PASS" starttime="20220506 09:40:15.296" endtime="20220506 09:40:15.445"/>
+<msg timestamp="20220506 14:13:30.374" level="INFO">Clicking element 'id=input_go'.</msg>
+<status status="PASS" starttime="20220506 14:13:30.373" endtime="20220506 14:13:31.257"/>
 </kw>
-<kw name="Element Text Should Be" library="SeleniumLibrary">
-<arg>xpath=//span[contains(@id,'UserPhone')]</arg>
-<arg>Enter a valid phone number</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220506 09:40:15.446" level="INFO">Verifying element 'xpath=//span[contains(@id,'UserPhone')]' contains exact text 'Enter a valid phone number'.</msg>
-<status status="PASS" starttime="20220506 09:40:15.445" endtime="20220506 09:40:15.488"/>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath=(//div[@role='alert'])[3]</arg>
+<arg>Access denied for user</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20220506 14:13:31.282" level="INFO">Element 'xpath=(//div[@role='alert'])[3]' contains text 'Access denied for user'.</msg>
+<status status="PASS" starttime="20220506 14:13:31.257" endtime="20220506 14:13:31.282"/>
 </kw>
-<status status="PASS" starttime="20220506 09:40:04.847" endtime="20220506 09:40:15.489"/>
+<kw name="Close Window" library="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" starttime="20220506 14:13:31.283" endtime="20220506 14:13:31.304"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220506 14:13:31.305" endtime="20220506 14:13:33.418"/>
+</kw>
+<status status="PASS" starttime="20220506 14:13:19.688" endtime="20220506 14:13:33.419"/>
 </test>
-<status status="PASS" starttime="20220506 09:40:04.428" endtime="20220506 09:40:15.492"/>
+<status status="PASS" starttime="20220506 14:13:19.499" endtime="20220506 14:13:33.421"/>
 </suite>
 <statistics>
 <total>
@@ -95,7 +89,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Demo4 Suite">Demo4 Suite</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Demo6 Suite">Demo6 Suite</stat>
 </suite>
 </statistics>
 <errors>
